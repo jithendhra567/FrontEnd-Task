@@ -1,0 +1,209 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.App{
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+.home{
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  padding: 50px;
+  background-color: rgb(3, 0, 55);
+}
+
+.header{
+  display: flex;
+  color: white;
+  font-size: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.home .content{
+  margin-top: 40px;
+  color: white;
+  text-align: start;
+}
+
+.sheet{
+  height: 100%;
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 45%;
+  left: 0;
+  border-radius: 50px;
+  box-shadow: 0px -20px 20px 15px rgb(255 255 255 / 7%);
+  padding: 30px;
+}
+
+.sheet .head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sheet .tabs{
+  border-radius: 30px;
+  background: rgb(210, 241, 255);
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  margin-top: 20px;
+}
+
+.sheet .tabhead{
+  border-radius: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sheet .tabhead p{
+  width: 33%;
+  padding: 15px 10px;
+}
+
+.sheet .tabhead .active{
+  width: 33%;
+  padding: 15px 10px;
+  background-color: rgb(54, 88, 224);
+  position: relative;
+  color: white;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.sheet .tabhead .active .right {
+  content: "";
+  position:absolute;
+  bottom: 0;
+  right: 0;
+  height:20px;
+  width: 20px;
+  margin-right: -20px;
+  border-bottom-left-radius: 50%;
+  background:rgb(255, 213, 0,0);
+  box-shadow: -6px 6px 0 0 rgb(54, 88, 224);
+}
+
+.sheet .tabhead .active .left {
+  content: "";
+  position:absolute;
+  bottom: 0;
+  left: 0;
+  height:20px;
+  width: 20px;
+  margin-left: -20px;
+  border-bottom-right-radius: 50%;
+  background:rgb(255, 213, 0,0);
+  box-shadow: 6px 6px 0 0 rgb(54, 88, 224);
+}
+
+.sheet .tabbody{
+  padding: 10px 30px;
+  box-shadow: 1px 1px 5px rgb(0 0 0 / 10%);
+  border-radius: 0  0 30px 30px;
+  background-color: rgb(54, 88, 224);
+
+}
+
+.sheet .tabbody .stats{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.checkbox-round {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(3, 34, 92, 0.697);
+  border-radius: 50%;
+  vertical-align: middle;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkbox-round:checked {
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+/* DashBoard */
+
+.dashboard{
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(222, 240, 255);
+  padding: 40px;
+}
+
+.b1{
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.b2{
+  position: relative;
+  width: 45%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.card{
+  box-shadow: 0 0 20px rgba(25, 25, 25, 0.116);
+  border-radius: 20px;
+}
+
+.line{
+  width: 100%;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.line img{
+  width: 20px;
+  height: 13px;
+}
+
+.line p{
+  margin: 0;
+  font-size: 10px;
+}
+
+.line .bar{
+  height: 7px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-image: linear-gradient(90deg, rgb(127, 84, 255), rgb(79, 108, 255), rgb(71, 126, 255));
+  border-radius: 1px;
+}
+
+.line ~ .line {
+  margin-top: 10px;
+}
